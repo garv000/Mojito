@@ -75,7 +75,7 @@ const Hero = () => {
                     <div className="view-cocktails flex flex-col md:items-start items-center w-full md:w-80 lg:text-xl z-1">
                         <p className="subtitle z-1 pb-4 text-center md:text-start">
                             Every cocktail on our menu is a blend of premium ingredients,
-                            creative flair, and timeless recipes — designed to delight your
+                            creative flair, and timeless recipes &ndash; designed to delight your
                             senses.
                         </p>
                         <a href="#cocktails" className='text-[#e7d393] subtitle'>View cocktails</a>

@@ -48,7 +48,7 @@ const Cocktails = () => {
                                     <h3 className='font-serif text-lg text-[#e7d393]'>{name}</h3>
                                     <p className='text-sm'>{country} | {detail}</p>
                                 </div>
-                                <span className='text-lg'>- {price}</span>
+                                <span className='text-lg'>&ndash; {price}</span>
                             </div>
                         ))}
                     </div>
@@ -63,7 +63,7 @@ const Cocktails = () => {
                                     <h3 className='font-serif text-lg text-[#e7d393]'>{name}</h3>
                                     <p className='text-sm'>{country} | {detail}</p>
                                 </div>
-                                <span className='text-lg'>- {price}</span>
+                                <span className='text-lg'>&ndash; {price}</span>
                             </div>
                         ))}
                     </div>

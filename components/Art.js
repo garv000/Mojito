@@ -68,7 +68,7 @@ const Art = () => {
             Made with Craft, Poured with Passion
           </div>
           <div className='text-white md:text-xl md:w-[50rem] text-center pt-2'>
-            This isn't just a drink. It's a carefully crafted moment made just for you
+            This isn&apos;t just a drink. It&apos;s a carefully crafted moment made just for you
           </div>
         </div>
 
