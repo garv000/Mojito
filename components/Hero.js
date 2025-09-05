@@ -58,7 +58,7 @@ const Hero = () => {
     })
 
     return (
-        <div ref={containerRef} className='min-h-[100vh] pb-10 sm:pb-0 w-[100vw] text-white bg-black overflow-hidden font-sans'>
+        <div ref={containerRef} className='sm:min-h-[100vh] h-[100vh] pb-10 sm:pb-0 w-[100vw] text-white bg-black overflow-hidden font-sans'>
 
             <div id='hero' className='relative z-1'>
                 <Image src={'/images/hero-left-leaf.png'} width={250} height={200} alt='leaf' className='left-leaf absolute left-0 top-52 z-0 w-[30vw] max-w-[300px]'></Image>
