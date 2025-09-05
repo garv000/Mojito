@@ -63,10 +63,10 @@ const Hero = () => {
             </div>
 
             <div className='body'>
-                <div className="content flex md:justify-between justify-center md:p-16 px-16">
-                    <div className="space-y-5 hidden md:block z-1 w-96">
-                        <p className='text-lg subtitle'>Cool. Crisp. Classic.</p>
-                        <p className="subtitle text-4xl lg:text-5xl font-serif font-bold text-[#e7d393]">
+                <div className="content flex md:flex-row flex-col-reverse md:justify-between justify-center md:p-16 px-16">
+                    <div className="space-y-5 z-1 md:w-96 text-center md:text-start">
+                        <p className='text-lg subtitle md:block hidden'>Cool. Crisp. Classic.</p>
+                        <p className="subtitle text-4xl lg:text-5xl font-serif font-bold text-[#e7d393] text-center md:text-start md:pt-0 pt-4">
                             Sip the Spirit <br /> of Summer
                         </p>
                     </div>
