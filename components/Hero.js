@@ -40,21 +40,17 @@ const Hero = () => {
         const startValue = isMobile ? "bottom bottom" : "bottom bottom"
         const endValue = isMobile ? "bottom bottom" : "bottom bottom"
         const video = videoRef.current
-        if (!video) return
-
-        video.addEventListener("loadedmetadata", () => {
-            gsap.to(video, {
-                currentTime: video.duration,
-                scrollTrigger: {
-                    trigger: "video",
-                    endTrigger: "#cocktails",
-                    start: startValue,
-                    end: endValue, // adjust scroll distance
-                    scrub: 1.5,
-                    pin: true,
-                }
-            });
-        })
+        gsap.to(video, {
+            currentTime: 12.98,
+            scrollTrigger: {
+                trigger: "video",
+                endTrigger: "#cocktails",
+                start: startValue,
+                end: endValue, // adjust scroll distance
+                scrub: 1.5,
+                pin: true,
+            }
+        });
     })
 
     return (
