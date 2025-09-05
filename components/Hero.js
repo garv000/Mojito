@@ -57,7 +57,7 @@ const Hero = () => {
         <div ref={containerRef} className='max-h-[100vh] h-[100vh] pb-10 sm:pb-0 w-[100vw] text-white bg-black overflow-hidden font-sans'>
 
             <div id='hero' className='relative z-1'>
-                <Image src={'/images/hero-left-leaf.png'} width={250} height={200} alt='leaf' className='left-leaf absolute left-0 top-52 z-0 w-[30vw] max-w-[300px]'></Image>
+                <Image src={'/images/hero-left-leaf.png'} width={250} height={200} alt='leaf' className='left-leaf absolute left-0 md:top-52 top-72 z-0 w-[30vw] max-w-[300px]'></Image>
                 <div className='title text-7xl sm:text-[8rem] md:text-[10rem] lg:text-[12rem] bg-gradient-to-b from-white to-white/40 text-transparent bg-clip-text text-center font-serif md:pt-16 pt-20 pb-6 md:py-16 font-bold sm:mt-12 mt-20'>MOJITO</div>
                 <Image src={'/images/hero-right-leaf.png'} width={200} height={200} alt='leaf' className='right-leaf absolute right-0 top-0 z-0 w-[30vw] max-w-[300px]'></Image>
             </div>
