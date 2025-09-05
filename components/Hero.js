@@ -39,23 +39,26 @@ const Hero = () => {
 
         const startValue = isMobile ? "bottom bottom" : "bottom bottom"
         const endValue = isMobile ? "bottom bottom" : "bottom bottom"
-        const duration = videoRef.current.duration
+        const video = videoRef.current
+        if (!video) return
 
-        gsap.to(videoRef.current, {
-            currentTime: duration,
-            scrollTrigger: {
-                trigger: "video",
-                endTrigger: "#cocktails",
-                start: startValue,
-                end: endValue, // adjust scroll distance
-                scrub: 1.5,
-                pin: true,
-            }
-        });
+        video.addEventListener("loadedmetadata", () => {
+            gsap.to(video, {
+                currentTime: video.duration,
+                scrollTrigger: {
+                    trigger: "video",
+                    endTrigger: "#cocktails",
+                    start: startValue,
+                    end: endValue, // adjust scroll distance
+                    scrub: 1.5,
+                    pin: true,
+                }
+            });
+        })
     })
 
     return (
-        <div ref={containerRef} className='sm:min-h-[100vh] pb-10 sm:pb-0 w-[100vw] text-white bg-black overflow-hidden font-sans'>
+        <div ref={containerRef} className='min-h-[100vh] pb-10 sm:pb-0 w-[100vw] text-white bg-black overflow-hidden font-sans'>
 
             <div id='hero' className='relative z-1'>
                 <Image src={'/images/hero-left-leaf.png'} width={250} height={200} alt='leaf' className='left-leaf absolute left-0 top-52 z-0 w-[30vw] max-w-[300px]'></Image>
